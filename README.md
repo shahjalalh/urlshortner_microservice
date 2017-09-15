@@ -22,8 +22,8 @@ $ python manage.py runserver
 
 
 ## Example usage:
-http://localhost:8000/api/new/http://www.gmail.com
-http://localhost:8000/api/new/http://www.yahoo.com/news
+1. http://localhost:8000/api/new/http://www.gmail.com
+2. http://localhost:8000/api/new/http://www.yahoo.com/news
 
 ## Example output
 ```
@@ -35,3 +35,6 @@ http://localhost:8000/api/cXede3
 
 ## Will redirect to:
 http://gmail.com/
+
+
+Have fun... :)
