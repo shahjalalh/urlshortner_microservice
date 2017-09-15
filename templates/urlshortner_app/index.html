@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}URL Shortener Microservice{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="header">
+            <h1>API: URL Shortener Microservice</h1>
+        </div>
+        <blockquote>
+            User stories:
+            <ol>
+                <li> I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+                <li>If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+                <li>When I visit that shortened URL, it will redirect me to my original link.</li>
+            </ol>
+        </blockquote>
+        <p>
+            <h3>Example usage:</h3>
+            <code>http://localhost:8000/api/new/http://www.gmail.com</code> <br/>
+            <code>http://localhost:8000/api/new/http://www.yahoo.com/news</code>
+        </p>
+        <p>
+            <h3>Example output</h3>
+            <code>{"original_url": "http://gmail.com/", "short_url": "http://localhost:8000/api/cXede3"}</code>
+        </p>
+        <p>
+            <h3>Usage:</h3>
+            <code>http://localhost:8000/api/cXede3</code>
+        </p>
+        <p>
+            <h3>Will redirect to:</h3>
+            <code>http://gmail.com/</code>
+        </p>
+
+
+    </div>
+{% endblock %}
