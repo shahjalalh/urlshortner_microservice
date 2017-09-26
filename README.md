@@ -2,11 +2,14 @@
 
 -----
 
+## Requirements
+- Django==1.10
+- djangorestframework==3.6.4
+
 
 ## Install
 In the terminal
 ```
-
 $ cd urlshortner_microservice
 $ pip install -r requriements.txt
 $ python manage.py migrate
